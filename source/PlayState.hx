@@ -9,7 +9,7 @@ import flixel.graphics.FlxGraphic;
 import openfl.display.BitmapData;
 import flash.system.System;
 import openfl.utils.Assets as OpenFlAssets;
-#if desktop
+#if sys
 import sys.FileSystem;
 import sys.io.File;
 #end
@@ -1683,8 +1683,8 @@ class PlayState extends MusicBeatState
 		iconP2 = new HealthIcon(SONG.player2, false);
 		iconP2.y = healthBar.y - (iconP2.height / 2);
 		add(iconP2);
-		#if desktop
-		if(FileSystem.exists(Paths.txt(SONG.song.toLowerCase() + "/info")))
+		#if cpp
+		if(OpenFlAssets.exists(Paths.txt(SONG.song.toLowerCase() + "/info")))
 			{
 				
 				var songInfoName:String = CoolUtil.coolTextFile(Paths.txt(SONG.song.toLowerCase() + "/info"))[0];
