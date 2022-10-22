@@ -99,6 +99,7 @@ class TitleState extends MusicBeatState
 	var logoBl:Sprite;
 	var logoTE:Sprite;
 	var gfDance:Sprite;
+	var qt:FlxSprite;
 	var danceLeft:Bool = false;
 	var titleText:Sprite;
 
@@ -399,13 +400,13 @@ class TitleState extends MusicBeatState
 			// credTextShit.text = "Friday";
 			// credTextShit.screenCenter();
 			case 13:
-				addMoreText('Friday');
+				addMoreText('Friday Night Funkin');
 			// credTextShit.visible = true;
 			case 14:
-				addMoreText('Night');
+				addMoreText('QT');
 			// credTextShit.text += '\nNight';
 			case 15:
-				addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+				addMoreText('Mod'); // credTextShit.text += '\nFunkin';
 
 			case 16:
 				skipIntro();
