@@ -809,7 +809,7 @@ class Character extends Sprite
 	/**
 	 * FOR GF DANCING SHIT
 	 */
-	public function dance()
+	public function dance(useAltAnimation:Bool=false)
 	{
 		if (!debugMode)
 		{
