@@ -4156,7 +4156,8 @@ class PlayState extends MusicBeatState
 				paused = true;
 				qtCarelessFin = true;
 				FlxG.sound.music.pause();
-				vocals.pause();
+				vocals1.pause();
+				vocals2.pause();
 				//Conductor.songPosition = 0;
 				var doof = new DialogueBox(false, CoolUtil.coolTextFile(Paths.txt('cessation/finalDialogue')));
 				doof.scrollFactor.set();
