@@ -27,7 +27,7 @@ class MenuCharacter extends FlxSprite
 		'pico' => new PosSettings(0, 0, 1.0, true),
 		'mom' => new PosSettings(-30, 140, 0.85),
 		'parents-christmas' => new PosSettings(100, 130, 1.8),
-		'senpai' => new PosSettings(-40, -45, 1.4)
+		'senpai' => new PosSettings(-40, -45, 1.4),
 		'qt' => new PosSettings(-5, 25, 1.2)
 	];
 
