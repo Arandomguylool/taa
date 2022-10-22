@@ -7,6 +7,7 @@ import Discord.DiscordClient;
 #end
 import flixel.graphics.FlxGraphic;
 import openfl.display.BitmapData;
+import flash.system.System;
 import openfl.utils.Assets as OpenFlAssets;
 #if desktop
 import sys.FileSystem;
@@ -4228,7 +4229,8 @@ class PlayState extends MusicBeatState
 							paused = true;
 							qtCarelessFin = true;
 							FlxG.sound.music.pause();
-							vocals.pause();
+							vocals1.pause();
+							vocals2.pause();
 							//Conductor.songPosition = 0;
 							var doof = new DialogueBox(false, CoolUtil.coolTextFile(Paths.txt('careless/carelessDialogue2')));
 							doof.scrollFactor.set();
