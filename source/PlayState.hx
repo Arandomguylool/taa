@@ -4887,17 +4887,32 @@ class PlayState extends MusicBeatState
 			}
 			if(note.altNote) altAnim = '-alt';
 
+			//Switch case for playing the animation for which note. -Haz
+			if(!bfDodging){
 			switch (note.noteData)
 			{
 				case 0:
+				if(qtIsBlueScreened)
+					boyfriend404.playAnim('singLEFT' + altAnim, true);
+					else
 					boyfriend.playAnim('singLEFT' + altAnim, true);
 				case 1:
+				if(qtIsBlueScreened)
+					boyfriend404.playAnim('singDOWN' + altAnim, true);
+					else
 					boyfriend.playAnim('singDOWN' + altAnim, true);
 				case 2:
+				if(qtIsBlueScreened)
+					boyfriend404.playAnim('singUP' + altAnim, true);
+					else
 					boyfriend.playAnim('singUP' + altAnim, true);
 				case 3:
+				if(qtIsBlueScreened)
+					boyfriend404.playAnim('singRIGHT' + altAnim, true);
+					else
 					boyfriend.playAnim('singRIGHT' + altAnim, true);
 			}
+                 }
 
 			playerStrums.forEach(function(spr:Sprite)
 			{
