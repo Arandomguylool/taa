@@ -4887,8 +4887,6 @@ class PlayState extends MusicBeatState
 			}
 			if(note.altNote) altAnim = '-alt';
 
-					//Switch case for playing the animation for which note. -Haz
-					if(!bfDodging){
 			switch (note.noteData)
 			{
 				case 0:
@@ -4919,7 +4917,6 @@ class PlayState extends MusicBeatState
 			}
 		}
 	}
-}
 
 	var fastCarCanDrive:Bool = true;
 
