@@ -271,14 +271,6 @@ class FreeplayState extends MusicBeatState
 		
 		if (accepted)
 		{
-			if((songs[curSelected].songName.toLowerCase()=='termination') && !(FlxG.save.data.terminationUnlocked)){
-				trace("lmao, access denied idiot!");
-			}
-			else if((songs[curSelected].songName.toLowerCase()=='cessation') && !(FlxG.save.data.terminationBeaten)){
-				trace("lmao, access denied idiot! Prove yourself first mortal.");
-			}
-			else
-			{
 			trace(curSelectedSongHaveFunkyDiff);
 			trace(Paths.instFunky(songs[curSelected].songName.toLowerCase()));
 			var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty);
@@ -326,7 +318,6 @@ class FreeplayState extends MusicBeatState
 			
 		}
 	}
-}
 
 	function changeDiff(change:Int = 0)
 	{
