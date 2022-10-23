@@ -4510,7 +4510,9 @@ class PlayState extends MusicBeatState
 	
 
 	private function keyShit():Void
-	{
+        {
+		var control = PlayerSettings.player1.controls;
+
 		//Dodge code only works on termination and Tutorial -Haz
 		if(SONG.song.toLowerCase() == "termination" || SONG.song.toLowerCase()=='tutorial'){
 			//Dodge code, yes it's bad but oh well. -Haz
@@ -4552,8 +4554,6 @@ class PlayState extends MusicBeatState
 				});
 			}
 		}
-	  
-		var control = PlayerSettings.player1.controls;
 
 		// control arrays, order L D U R
 		var holdArray:Array<Bool> = [control.LEFT, control.DOWN, control.UP, control.RIGHT];
