@@ -230,6 +230,9 @@ class Character extends Sprite
 				animation.addByPrefix('deathConfirm', "BF Dead confirm", 24, false);
 
 				animation.addByPrefix('scared', 'BF idle shaking', 24);
+
+				animation.addByPrefix('dodge','boyfriend dodge', 24, false);
+
 				healthBarColor.setRGB(49, 176, 209, 255);
 				loadOffsetFile(curCharacter);
 
